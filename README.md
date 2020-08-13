@@ -21,3 +21,18 @@
 > IoT devices) you can jump straight to lesson 5 after taking lesson 2.
 
 > We hope you enjoy this course!
+
+> The Apps
+> In this course you will deploy TF Lite models in various apps including:
+
+    * Cats vs. Dogs: An app that classifies images of cats and dogs.
+    * Image Classification: An app that continuously classifies whatever it sees from your device's back
+    camera.
+    * Objection Detection: An app that continuously detects the objects (bounding boxes and classes) in
+    the frames seen by your device's back camera.
+    * Speech Recognition: An app that recognizes the words you say.
+
+> You can find all the apps for this course in this [Zip
+file](https://video.udacity-data.com/topher/2019/September/5d8e8cb3_tflite-apps/tflite-apps.zip).
+> Once you unzip the file you will find the folders containing the corresponding apps for each
+> lesson. We will also provide links to the individual apps later in each lesson.
