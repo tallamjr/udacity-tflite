@@ -98,6 +98,18 @@ tflite_model = converter.convert()
 
 ```
 
+#### Command-Line usage
+
+```bash
+#!/bin/bash
+
+# Saving with the command-line from a SavedModel
+tflite_convert --output_file=model.tflite --saved_model_dir=/tmp/saved_model
+
+# Saving with the command-line from Keras model
+tflite_convert --output_file=model.tflite --keras_model_file=model.h5
+```
+
 ### Post-training quantization
 
 ![](https://www.tensorflow.org/lite/performance/images/optimization.jpg)
