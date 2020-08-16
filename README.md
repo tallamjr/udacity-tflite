@@ -39,7 +39,6 @@ file](https://video.udacity-data.com/topher/2019/September/5d8e8cb3_tflite-apps/
 
 ## Lesson 2: Overview
 
-
 ### TensorFlow Lite Examples
 
 #### Example 1: SavedModel to TFLite
@@ -159,3 +158,9 @@ Lite model and then test it using the TF Lite Interpreter.
 [Exercise: Fashion MNIST](https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_lite/tflite_c03_exercise_convert_model_to_tflite.ipynb)
 
 [Solution: Fashion MNIST](https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_lite/tflite_c04_exercise_convert_model_to_tflite_solution.ipynb)
+
+## Lesson 3 – TF Lite on Android
+
+## Lesson 4 – TF Lite on iOS with Swift
+
+## Lesson 5 – TF Lite on IoT
