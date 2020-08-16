@@ -40,7 +40,61 @@ file](https://video.udacity-data.com/topher/2019/September/5d8e8cb3_tflite-apps/
 ## Lesson 2: Overview
 
 
+### TensorFlow Lite Examples
+
+#### Example 1: SavedModel to TFLite
+
 ```python
+import pathlib
+
+# Export the SavedModel
+export_dir = '/tmp/saved_model'
+tf.saved_model.save(model, export_dir)
+
+# Convert the model
+converter = tf.lite.TFLiteConverter.from_saved_model(export_dir)
+
+# Save the model
+tflite_model_file = pathlib.Path('/tmp/foo.tflite')
+tflite_model_file.write_bytpes(tflite_model)
+```
+
+#### Example 2: Keras to TFLite
+
+```python
+import tensorflow as tf
+import pathlib
+
+# Load the MobileNet tf.keras model
+model = tf.keras.applications.MobileNetV2(weights="imagenet", input_shape=(224, 224, 3))
+
+# Convert the model
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = converter.convert()
+
+# Save the model
+tflite_model_file = pathlib.Path('/tmp/foo.tflite')
+tflite_model_file.write_bytpes(tflite_model)
+```
+
+#### Example 3: Concrete functions to TFLite
+
+```python
+import tensorflow as tf
+
+# Load the MobileNet tf.keras model
+model = tf.keras.applications.MobileNetV2(weights="imagenet", input_shape=(224, 224, 3))
+
+# Get the concrete function from Keras model
+run_model = tf.function(lambda x: model(x))
+
+# Save the concrete function
+concrete_func = run_model.get_concrete_function(tf.TensorSpec(model.input[0].shape,
+                                                              model.inputs[0]dtype))
+
+# Save the model
+converter = tf.lite.TFLiteConverter.from_concrete_function([concrete_func])
+tflite_model = converter.convert()
 
 ```
 
