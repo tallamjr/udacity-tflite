@@ -39,6 +39,8 @@ file](https://video.udacity-data.com/topher/2019/September/5d8e8cb3_tflite-apps/
 
 ## Lesson 2: Overview
 
+![](./inc/lesson-2/deployment.png?raw=true)
+
 ### TensorFlow Lite Examples
 
 #### Example 1: SavedModel to TFLite
@@ -131,7 +133,7 @@ What is a TensorFlow Lite delegate?
 
 A TensorFlow Lite delegate is a way to delegate part or all of graph execution to another executor.
 
-![]("./inc/delegates.png")
+![]("inc/lesson-2/delegates.png")
 
 * https://www.tensorflow.org/lite/performance/delegates
 
