@@ -133,7 +133,7 @@ What is a TensorFlow Lite delegate?
 
 A TensorFlow Lite delegate is a way to delegate part or all of graph execution to another executor.
 
-![]("inc/lesson-2/delegates.png")
+![](./inc/lesson-2/delegates.png?raw=true)
 
 * https://www.tensorflow.org/lite/performance/delegates
 
