@@ -62,7 +62,13 @@ To learn more about Post-Training Quantization make sure to check out the [TF Li
 
 ### TF Lite Delegates
 
-IMAGE HERE
+What is a TensorFlow Lite delegate?
+
+A TensorFlow Lite delegate is a way to delegate part or all of graph execution to another executor.
+
+![]("./inc/delegates.png")
+
+* https://www.tensorflow.org/lite/performance/delegates
 
 ### TF Lite Models
 
@@ -75,3 +81,15 @@ You can view the collection of pre-trained TFLite models on the link below:
 To access the Colab Notebook, login to your Google account and click on the link below:
 
 [Linear Regression](https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_lite/tflite_c01_linear_regression.ipynb)
+
+[Transfer Learning](https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_lite/tflite_c02_transfer_learning.ipynb)
+
+#### Exercise: Fashion MNIST
+
+In this exercise you will train a simple convolutional
+neural network on the Fashion MNIST dataset. Once your model is trained, you will convert it to a TF
+Lite model and then test it using the TF Lite Interpreter.
+
+[Exercise: Fashion MNIST](https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_lite/tflite_c03_exercise_convert_model_to_tflite.ipynb)
+
+[Solution: Fashion MNIST](https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_lite/tflite_c04_exercise_convert_model_to_tflite_solution.ipynb)
